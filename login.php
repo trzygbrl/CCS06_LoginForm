@@ -34,7 +34,8 @@ if (isset($_POST['submit'])) {    // if Form is submitted
 }
 include 'header.php';
 	?>	
-	 <form class="form-1" action="login.php" method ="post">
+	 <div class="page-wrap">
+	 <form class="form-1 shadow-sm" action="login.php" method ="post">
 	 	<h2>Login Form</h2>
         <?php if ($err_msg !="") ?>
 	 	<p class="err-msg"><?php echo $err_msg; $err_msg ="";?></p>
@@ -54,5 +55,6 @@ include 'header.php';
 	 		<a href="index.php" class="btn btn-danger" name="cancel">Cancel</a>
 	 	</div>
 	 </form>
+	 </div>
 </body>
 </html>
